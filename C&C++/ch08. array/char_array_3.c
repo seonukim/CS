@@ -8,7 +8,7 @@ int main() {
 
     for (i=0; i<20; i++) {
         if (a[i] == 'l') {
-            cnt++;
+            cnt++;          // a[i]가 l이면 cnt를 1씩 증가시킴
         }
     }
 
