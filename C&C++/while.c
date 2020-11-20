@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main() {
+    int n;
+    char a;
+    scanf("%d %c", &n, &a);
+
+    while (n--) {
+        printf("%c", a);
+    }
+
+    return 0;
+}
