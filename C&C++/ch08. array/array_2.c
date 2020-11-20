@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+#include <limits.h>         // 최대, 최소값 등을 담고 있음
 
 int main() {
     int a[10] = {6, 5, 4, 3, 9, 8, 0, 1, 2, 7};
