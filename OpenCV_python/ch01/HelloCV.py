@@ -2,7 +2,8 @@ import sys
 import cv2
 print('Hello CV', cv2.__version__)
 
-img = cv2.imread('cat.bmp')
+path = '/Users/seonu/Documents/SoyNet/study/CS/OpenCV_python/ch01/images/'
+img = cv2.imread(path + '1.jpg')
 # imread() 의 flags 인자의 default는 cv2.IMREAD_COLOR
 
 if img is None:     # 이미지를 못불러왔을 때 예외처리 코드
