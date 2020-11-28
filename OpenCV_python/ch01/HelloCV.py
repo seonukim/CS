@@ -3,8 +3,9 @@ import cv2
 print('Hello CV', cv2.__version__)
 
 img = cv2.imread('cat.bmp')
+# imread() 의 flags 인자의 default는 cv2.IMREAD_COLOR
 
-if img is None:
+if img is None:     # 이미지를 못불러왔을 때 예외처리 코드
     print('Image load failed!')
     sys.exit()
 
