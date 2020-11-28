@@ -9,7 +9,9 @@ if img is None:     # 이미지를 못불러왔을 때 예외처리 코드
     print('Image load failed!')
     sys.exit()
 
+# cv2.imwrite('cat_gray.png', img)
+
 cv2.namedWindow('image')        # image라는 window 생성
 cv2.imshow('image', img)        # image창에 img 를 띄워줌
 cv2.waitKey()                   # 키보드 입력을 기다림
-cv2.destroyAllWindows()         # 창 닫기
+cv2.destroyAllWindows()
