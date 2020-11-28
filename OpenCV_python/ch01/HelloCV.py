@@ -14,5 +14,10 @@ if img is None:     # 이미지를 못불러왔을 때 예외처리 코드
 
 cv2.namedWindow('image')        # image라는 window 생성
 cv2.imshow('image', img)        # image창에 img 를 띄워줌
-cv2.waitKey()                   # 키보드 입력을 기다림
+
+while True:
+    if cv2.waitKey() == 27:     # esc 키를 입력하면 창 종료 (esc의 ASCII CODE는 27)
+    # if cv2.waitKey() == ord('q'):     이 방식도 가능 -> 키보드의 q 입력 시 창 종료
+        break                   # 키보드 입력을 기다림
+
 cv2.destroyAllWindows()
