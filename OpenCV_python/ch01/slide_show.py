@@ -16,6 +16,7 @@ cv2.setWindowProperty('image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
 # 무한 루프
 cnt = len(img_files)
+print("len : ", cnt)
 idx = 0
 
 while True:
